@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root{
+    --title-font:'Staatliches', cursive;
+    --main-color: #20F340;
+}
+body{
+    color: var(--title-font);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    color:white;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+    text-decoration: none;
+}
+
+.content{
+    overflow-x: hidden;
+}
+
+section{
+    height: 100vh;
+    width:100vw;
+
+}
+
+
+#title{
+    height:100vh;
+    width: 100vw;
+    background: url("firefly.gif") no-repeat center center fixed;
+    background-size: cover;
+    z-index: 0;
+}
+
+
+#logo-title{
+    z-index:3;;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+#head-logo{
+    width: 90vw;
+    height:auto;
+    max-width: 500px;
+    text-shadow: 10px 10px 8px #888888;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+}
+
+h1, h2, h3{
+    font-family: var(--title-font);
+    color: #20F340;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+h2{
+    font-size:2em;
+    text-align: center;
+}
+
+
+#logo-title > h1{
+    padding-top: 30px;
+    font-size: 5em;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Services */
+
+.pages-head{
+    position: absolute;
+    margin-top: 15px;
+    left: 0;
+    right:0;
+}
+
+h3{
+    text-align: center;
+    padding-top:20px;
+}
+
+#plumbing{
+    background: url("plumbing.jpg") no-repeat center center fixed;
+}
+
+#electrical{
+    background: url("electrical.jpg") no-repeat center center fixed;
+    
+}
+
+#solar{
+    background: url("solar.jpg") no-repeat center center fixed;
+    
+}
+
+#more-jobs{
+    background: url("tools.jpg") no-repeat center center fixed;
+
+}
+
+.row{
+    height:50%;
+    z-index: index 0;;
+}
+
+.job-desc{
+    padding: 20px;
+}
+
+.dark-overlay{
+    position:absolute;
+    width:auto;
+    height:auto;
+    z-index:1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.to-front{
+    z-index: 10;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+a:visited{
+    color:white;
+}
+
+#team{
+    background-color: black;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.team-img{
+    border-radius: 100%;
+    border: 10px solid var(--main-color);
+    width: 50vw;
+    height:auto;
+    max-width: 250px;
+}
+
+#team-carousel{
+    padding-top:25vh;
+}
+
+/* Call to action */
+
+#call-to-action{
+    background-color: #FFF;
+}
+
+#call-head{
+    height: 25vh;
+    width: 100%;
+    background: url("lighting.jpg") no-repeat center center fixed;
+}
+
+#call-head h2{
+    padding-top: 5vh;
+}
+
+#contact-content{
+    height:65vh;
+    width:100%;
+    padding:10px;
+}
+
+.card-text{
+    color:black;
+}
+
+.card iframe{
+    padding:15px;
+}
+
+.contact-btn{
+    padding-right:5px;
+}
+
+.card .btn{
+    margin-bottom: 18px;
+}
+
+footer{
+    background-color: #999;
+    height:10vh;
+    width:100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+svg{
+
+    height:32px;
+    width: 32px;
+}
+
+.social:active{
+    color:black;
+}
+
+.social{
+    margin-left:30px;
+}
+
+svg:first-of-type{
+    margin-left:0px;
+}
+
+@media (orientation:landscape) and (max-width: 600px) {
+  
+    #head-logo{
+        max-width:200px;
+    }
+
+    .team-img{
+        max-width: 150px;
+    }
+}
